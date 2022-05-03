@@ -1,4 +1,8 @@
 function extrapOrderTwo = TalayTubaroOrderTwo(initialS,mu,sigma,N_approx,t0,T)
+%TalayTubaroOrderTwo.m: Function taking inputs defined for the problem
+%along with a number of time-steps, which calls randomWalkGBM.m twice to
+%obtain estimates before outputting the improved estimate with second-order
+%accuracy.
 
 u_h1=randomWalkGBM(initialS,mu,sigma,N_approx,t0,T); %get first approximation by weak Euler method 
 u_h2=randomWalkGBM(initialS,mu,sigma,N_approx*2,t0,T); %get second approximation with twice number of time steps as above
