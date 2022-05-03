@@ -1,4 +1,6 @@
 function randomWalkApprox = randomWalkGBM(initialS,mu,sigma,N_approx,t0,T)
+%randomWalkGBM: Function that takes inputs from the problem plus a number
+%of time-steps, and outputs the weak Euler approximation. 
 
 hApprox=(T-t0)/N_approx; %find the size of each time-step for approximate 
 randomWalkApprox=zeros(1,N_approx+1); %initialise the output vectors
