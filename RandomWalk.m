@@ -1,3 +1,6 @@
+%Script which produces a comparison of the scaled random walk with Brownian
+%motion (figure 16 in the report, page 98).
+
 %Form 3 time vectors of differing size
 t1=linspace(0,1,100);
 h1=t1(2)-t1(1); 
