@@ -40,8 +40,12 @@ This code is self-contained and does not make calls to any other functions, thus
 Section 6.4 (Stochastic Numerics: Weak methods - A numerical example: Continuous Black-Scholes formula):
 The functions explicitEulerGBM.m, milsteinGBM.m and randomWalkGBM.m are called in code sections 2,3 and 4 of the driver
 BlackScholes.m to produce the table on page 102, the columns of which are used to produce figure 17 (page 103).
-Note that the first code section must be run before any others, as this defines the variables of the problem.
+Note that the first code section of BlackScholes.m must be run before any others, as this defines the variables of the problem.
 Use the 'Run Section' feature to run this code. 
 
-
+Section 6.6 (Stochastic Numerics: Weak methods - Talay-Tubaro extrapolation method):
+The functions TalayTubaroOrderTwo.m and TalayTubaroOrderThree.m (which both call the function randomWalkGBM.m) are called
+in code sections 5 and 6 of the driver BlackScholes.m to produce the tables on pages 108 and 110. Note that again, the first
+code section of BlackScholes.m must be run before any others. 
+Use the 'Run Section' feature to run this code.
 
