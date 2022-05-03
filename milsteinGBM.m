@@ -1,4 +1,9 @@
- function [milsteinApprox,trueGBM,samplePath] = milsteinGBM(initialS,mu,sigma,N_approx,N_true,t0,T,zValues)
+function [milsteinApprox,trueGBM,samplePath] = milsteinGBM(initialS,mu,sigma,N_approx,N_true,t0,T,zValues)
+%milsteinGBM: Function that takes inputs from the problem, two numbers
+%of time-steps and also an optional vector zValues which holds the sample
+%path (if already generated), and outputs the Milstein approximation, true
+%solution and the sample path that generates them. Based on the function
+%explicitEulerGBM.m.
 
 if nargin==7 %If values of sample path not given then generated here
     zValues=zeros(1,N_true); %to hold the sample path
