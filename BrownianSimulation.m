@@ -1,3 +1,5 @@
+%Code that simulates one-dimensional Brownian motion, providing three
+%magnifications of a trajectory over the domain [0,1].
 rng(1);
 t=linspace(0,1,100000); %discretise the domain [0,1]
 tZoom=linspace(0.5,0.6,10000);
