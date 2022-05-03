@@ -1,4 +1,11 @@
 function [eulApprox,samplePath] = explicitEulerMethod(funcIn,params,x0,N,t0,T,zValues,factor)
+%explicitEulerMethod.m: Function taking inputs of a function funcIn (used
+%to evaluate the coefficients of an SDE), params (parameters which may be
+%an input of funcIn), the initial state of the process, a number of
+%time-steps N, the interval limits, optional sample path vector zValues and
+%an optional integer factor which tells us how many times N goes into any 
+%N used in a previous call to the function. The outputs include the Euler
+%approximation and the sample path used to generate this approximation.
 
 h=(T-t0)/N; %define step-size
 eulApprox=zeros(1,N+1); %initialise vector to fill with the approximations
