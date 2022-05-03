@@ -1,3 +1,6 @@
+%Script which carries out the numerical experiments of chapter 6 on the
+%test problem of the continuous Black-Scholes equation.
+
 %Define variables of problem
 T=3; %final time
 r=0.5; %interest rate of bank account
