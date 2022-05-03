@@ -1,4 +1,8 @@
 function [eulApprox,trueGBM,samplePath] = explicitEulerGBM(initialS,mu,sigma,N_approx,N_true,t0,T,zValues)
+%explicitEulerGBM: Function that takes inputs from the problem, two numbers
+%of time-steps and also an optional vector zValues which holds the sample
+%path (if already generated), and outputs the Euler approximation, true
+%solution and the sample path that generates them. 
 
 if nargin==7 %If values of sample path not given then generated here
     zValues=zeros(1,N_true); %to hold the sample path
